@@ -3,6 +3,6 @@ applications:
   path: build/libs/pal-tracker.jar
   space: test
   routes:
-     - route:  bootlab-generous-meerkat.apps.pikes.pal.pivotal.io
+     - route: dsg-pal-tracker-test.apps.pikes.pal.pivotal.io
   env:
     WELCOME_MESSAGE: Hello from the review environment
