@@ -9,7 +9,6 @@ public class InMemoryTimeEntryRepository implements  TimeEntryRepository {
 
     Map<Long, TimeEntry> timeEntrys;
 
-
     public InMemoryTimeEntryRepository() {
         timeEntrys = new HashMap<Long,TimeEntry>();
     }
@@ -25,6 +24,7 @@ public class InMemoryTimeEntryRepository implements  TimeEntryRepository {
 
         return timeEntry;
     }
+
     public TimeEntry find(long id){
 
         return timeEntrys.get(id);
