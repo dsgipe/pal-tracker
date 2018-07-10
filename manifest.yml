@@ -1,7 +1,7 @@
 applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
-  space: test
+  space: sandbox
   routes:
      - route:  bootlab-generous-meerkat.apps.pikes.pal.pivotal.io
   env:
