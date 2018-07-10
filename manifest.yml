@@ -1,7 +1,7 @@
 applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
-  space: main
+  space: release
   routes:
      - route: dsg-pal-tracker-main.apps.pikes.pal.pivotal.io
   env:
