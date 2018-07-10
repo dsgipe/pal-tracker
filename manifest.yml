@@ -1,6 +1,7 @@
 applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
+  space: test
   routes:
   - route: ps-pal-tracker-review.apps.simon_steve.pal.pivotal.io
   env:
