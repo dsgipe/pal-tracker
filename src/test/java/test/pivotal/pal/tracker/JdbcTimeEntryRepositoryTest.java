@@ -23,11 +23,14 @@ public class JdbcTimeEntryRepositoryTest {
 
     @Before
     public void setUp() throws Exception {
+        String tmp = System.getenv("WELCOME_MESSAGE");
+
+        String tmp2 = System.getenv("SPRING_DATASOURCE_URL");
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setUrl(System.getenv("SPRING_DATASOURCE_URL"));
 
-        subject = new JdbcTimeEntryRepository(dataSource);
 
+        subject = new JdbcTimeEntryRepository(dataSource);
         jdbcTemplate = new JdbcTemplate(dataSource);
         jdbcTemplate.execute("DELETE FROM time_entries");
 
